@@ -1,0 +1,48 @@
+body {
+    background-color: black;
+    background-image: none;
+}
+.Title {
+    color: lime;
+    text-align: center;
+    font-family:monospace;
+    font-size: 5vh;
+}
+.Medbtn {
+    background-color: lime;
+    color: black;
+    border: 0.5vh;
+    border-style: inset;
+    border-color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    font-size: 24px;
+    font-family: monospace;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.4s ease;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.Medbtn:hover {
+    background-color: rgb(1, 164, 1); /* Change the background color on hover */
+}
+.TitleFrame {
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    height: 7vh;
+    background-color: black;
+    background-image: none;
+    gap: 2.5vh;
+}
+.Text {
+    color: lime;
+    font-size: 24px;
+    font-family:monospace;
+    margin-bottom: 20px;
+}
+.Line {
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 0.1vh;
+    margin: 20px 0;
+}
