@@ -1,0 +1,57 @@
+body {
+  background: #211b2e;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  padding: 50px;
+}
+
+.text2 {
+    font-size: 24px;
+    opacity: 0.5;
+    place-content: center;
+}
+
+.text {
+    
+    position: relative;
+    font-size: 48px;
+    font-weight: bold;
+    opacity: 0.2;
+    background: url("data:image/svg+xml;utf8,\
+    <svg xmlns='http://www.w3.org/2000/svg'>\
+    <filter id='n'>\
+        <feTurbulence type='fractalNoise' baseFrequency='0.3' numOctaves='3' result='noise'/>\
+        <feColorMatrix type='saturate' values='0'/>\
+        <feColorMatrix type='matrix' values='\
+            2 0 0 0 0 \
+            0 2 0 0 0 \
+            0 0 2 0 0 \
+            -1 -1 -1 2.4 0'/>\
+        <feComponentTransfer>\
+            <feFuncR type='discrete' tableValues='0 1'/>\
+            <feFuncG type='discrete' tableValues='0 1'/>\
+            <feFuncB type='discrete' tableValues='0 1'/>\
+        </feComponentTransfer>\
+    </filter>\
+    <rect width='100%25' height='100%25' filter='url(%23n)'/>\
+    </svg>");
+
+    background-size: 150%;
+    animation: moveNoise 2s steps(2) infinite;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    mix-blend-mode: screen;
+}
+
+@keyframes moveNoise {
+  0%   { background-position: 0% 0%; }
+  25%  { background-position: 20% 10%; }
+  50%  { background-position: 40% 30%; }
+  75%  { background-position: 10% 40%; }
+  100% { background-position: 0% 0%; }
+}
